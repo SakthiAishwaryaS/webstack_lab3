@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Image mapping</title>
+</head>
+<body style="background-color:powderblue;">
+<center><h2 style="color:white;">IMAGE MAPPING and Forms</h2></center>
+<center><img src="F:\HTML SEM2\3rd project\img2.jfif" usemap="#mymap"></center>
+<map name="mymap">
+<area shape="rect" coords="112,4,266,88" href="https://en.wikipedia.org/wiki/Payroll" title="payroll" alt="image">
+<area shape="circ" coords="27,84,65" href="https://en.wikipedia.org/wiki/Salary" title="salary" alt="image">
+<area shape="poly" coords="70,84,163,119,105,75,182,133,30,95,78,167,19,8,255,163,62,165,29,101,27,84,92,152,118,101,98,162" href="https://en.wikipedia.org/wiki/Overtime" title="Overtime" alt="image">
+</map>
+ <form>
+          <fieldset>
+         <label for="fname">First name:</label><br>
+         <input type="text" id="fname" name="fname"><br>
+         <label for="lname">Last name:</label><br>
+         <input type="text" id="lname" name="lname">
+  <legend><strong>Employee  Details</strong></legend>
+<br>
+<p><strong>Gender</strong></p>
+            <label><input id="Male" type="radio" name="Male-Female" value="Male" checked> Male</label>
+            <label><input id="Female" type="radio" name="Male-Female" value="Female"> Female</label>
+<p><strong>Employee password</strong></p>
+<label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+<p><strong>Employee DOB:</strong></P>
+<label for="birthday">Birthday:</label>
+ <input type="date" id="birthday" name="birthday">
+          </fieldset>
+          <fieldset>
+            <legend><strong>Employee Role</strong></legend>
+            <input id="Manager" type="checkbox" name="Employee" value="Manager" checked> <label for="Manager">Manager</label>
+            <input id="Senior" type="checkbox" name="Employee" value="Senior"> <label for="Senior">Senior</label>
+            <input id="Fresher" type="checkbox" name="Employee" value="Fresher"> <label for="Fresher">Fresher</label>
+          </fieldset>
+          <input type="text" name="Employee details" placeholder="Payroll" required>
+          <button type="submit">Submit</button>
+<p><strong>Employee Email</strong></p>
+<label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+        </form>
+</body>
+</html>
